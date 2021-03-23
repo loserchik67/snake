@@ -1,4 +1,5 @@
-import { getInputDirection } from "./input.js";
+import { getInputDirection } from './input.js';
+//import { score } from './food.js';
 
 export const SNAKE_SPEED = 5;
 const snakeBody = [{x: 11, y: 11}];
@@ -44,6 +45,7 @@ export function snakeIntersection(){
     return onSnake(snakeBody[0], { ignoreHead: true })
 }
 
+
 function equalPositions(pos1, pos2) {
     return pos1.x === pos2.x && pos1.y === pos2.y;
 }
@@ -55,4 +57,5 @@ function addSegments() {
 
    newSegments = 0;
 }
+
 

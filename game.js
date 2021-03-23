@@ -1,6 +1,6 @@
 import { update as updateSnake, draw as drawSnake, SNAKE_SPEED ,
 getSnakeHead, snakeIntersection } from './snake.js';
-import { update as updateFood, draw as drawFood, score} from './food.js';
+import { update as updateFood, draw as drawFood, score } from './food.js';
 import { outsideGrid } from './grid.js';
 
 let lastRenderTime = 0;
@@ -11,7 +11,7 @@ function main(currentTime) {
     if (gameOver) {
         if (confirm(`
         You lost... 
-        Your score was: ${score}
+        your score is: ${score}!
         Press ok to restart.`)){
             window.location = '/';
         }
